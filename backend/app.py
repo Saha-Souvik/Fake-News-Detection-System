@@ -4,7 +4,7 @@ import joblib
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app,origins=["https://fake-news-detection-user-interface.vercel.app"])  # Enable CORS
+CORS(app)  # Enable CORS
 
 # Load model
 model = joblib.load("model.pkl")
