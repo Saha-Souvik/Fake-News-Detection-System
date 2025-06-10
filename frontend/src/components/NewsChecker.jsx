@@ -16,7 +16,7 @@ const NewsChecker = () => {
 
     setLoading(true);
     try {
-      const response = await axios.post("https://fake-news-detection-backend-hfa0.onrender.com", {
+      const response = await axios.post("https://fake-news-detection-backend-hfa0.onrender.com/predict", {
         text: newsText,
       });
       console.log("Response from backend:", response.data.result);
